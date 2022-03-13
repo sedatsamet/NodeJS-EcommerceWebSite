@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+<body>
+     <a href="/shopping_cart">
+         <img src="../images/shopping_cart.jpg" style="position:relative; top:10px; left:10px;" width="50", height="50" alt="shopping_cart">
+     </a>
+    {{#if condition}}
+        <h1>{{username}}, Welcome to Homework-4's Welcome Page</h1>
+        <li>
+            <a href="/form">Login</a>  
+        </li>
+        <li>
+            <a href="/register">Register</a>
+        </li>
+        <li>
+            <a href="/products">Products</a>
+        </li>
+        <li>
+             <a href="/logout">Logout</a>
+        </li>
+        <p style="position:absolute; top:10px; right:10px;">{{username}} logged in</p>
+    {{else}}
+        <h1>Welcome Page of Web Programming Homework - 4</h1>
+        <li>
+            <a href="/form">Login</a>  
+        </li>
+        <li>
+            <a href="/register">Register</a>
+        </li>
+        <li>
+            <a href="/products">Products</a>
+        </li>
+        <p style="position:absolute; top:10px; right:10px;">Not logged in</p>
+    {{/if}}
+</body>
+</html>
